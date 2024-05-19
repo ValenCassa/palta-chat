@@ -30,6 +30,10 @@ export default function NewPage() {
     onResponse: () => {
       setIsLoadingFirst(false);
     },
+    onError: () => {
+      toast.dismiss(toastRef!);
+      toast.error("An error occurred while creating the chat");
+    },
     body: {
       model: defaultModel,
     },

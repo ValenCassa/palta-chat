@@ -1,6 +1,5 @@
 import { cn } from "@/utils/cn";
 import { getSidebarState } from "@/utils/get-sidebar-state";
-import { cookies } from "next/headers";
 
 export const Main = (props: { children: React.ReactNode }) => {
   const isSidebarClosed = getSidebarState() === "closed";

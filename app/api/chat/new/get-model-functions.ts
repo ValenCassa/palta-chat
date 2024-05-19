@@ -22,11 +22,11 @@ export const getModelFunction = (model: Models[number]) => {
     case "gpt-4o":
       return openai(model);
     case "meta-llama-3-70b-instruct":
-      return fireworks("accounts/fireworks/models/llama-v3-70b-instruct");
+      return fireworks.chat("accounts/fireworks/models/llama-v3-70b-instruct");
 
     case "mixtral-8x22b-instruct":
     case "mixtral-8x7b-instruct":
-      return fireworks(`accounts/fireworks/models/${model}`);
+      return fireworks.chat(`accounts/fireworks/models/${model}`);
 
     case "gemma-7b-it-groq":
     case "llama3-70b-8192-groq":
@@ -34,7 +34,7 @@ export const getModelFunction = (model: Models[number]) => {
     case "mixtral-8x7b-32768-groq":
       // remove -groq
       const _model = model.replace(/-groq$/, "");
-      return groq(_model);
+      return groq.chat(_model);
     default:
       throw Error(`Model ${model} is not supported`);
   }
