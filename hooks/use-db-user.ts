@@ -1,8 +1,8 @@
 import { User } from "@/server/db/schema/users";
 import useSWR from "swr";
 
-const fetcher = (url: string): Promise<User> => {
-  return fetch(url).then((res) => res.json());
+const fetcher = async (url: string): Promise<User> => {
+  return await fetch(url).then((res) => res.json());
 };
 
 export const useDBUser = () => {
