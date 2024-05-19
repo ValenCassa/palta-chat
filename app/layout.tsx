@@ -13,6 +13,17 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Palta",
   description: "Your hub for LLMs",
+  twitter: {
+    title: "Palta",
+    card: "summary_large_image",
+    description: "Your hub for LLMs",
+    images: "https://i.imgur.com/RnmGElc.png",
+  },
+  openGraph: {
+    title: "Palta",
+    description: "Your hub for LLMs",
+    images: "https://i.imgur.com/RnmGElc.png",
+  },
   icons: {
     icon: favicon.src,
   },

@@ -2,7 +2,6 @@ import { db } from "@/server/db/client";
 import { cn } from "@/utils/cn";
 import { CircleStackIcon } from "@heroicons/react/16/solid";
 import { eq } from "drizzle-orm";
-
 import { sidebarFooterActionClassNames } from "./sidebar-footer";
 import { currentUser } from "@clerk/nextjs/server";
 import { users } from "@/server/db/schema/users";
