@@ -28,7 +28,7 @@ export default async function PublicChatRoute({
   const { conversations: conversation, users: user } = chat;
 
   return (
-    <div>
+    <div className="flex h-screen flex-col overflow-hidden">
       <div className="relative w-full border-b border-primary bg-surface-secondary p-2">
         <a
           href="https://palta.chat"
@@ -43,7 +43,7 @@ export default async function PublicChatRoute({
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_206_1760)">
+              <g clipPath="url(#clip0_206_1760)">
                 <mask
                   id="mask0_206_1760"
                   style={{
@@ -68,7 +68,7 @@ export default async function PublicChatRoute({
                   <path
                     d="M10.4254 3.78092L10.2025 2.45331C10.0843 1.74986 9.52887 1.19862 8.82009 1.08137L7.48242 0.860107"
                     stroke="#5D2E02"
-                    stroke-width="1.00901"
+                    strokeWidth="1.00901"
                   />
                   <path
                     d="M7.9043 11.8877C7.9043 13.2675 8.25464 14.5908 8.87827 15.5666C9.5019 16.5423 10.3477 17.0904 11.2297 17.0904C12.1116 17.0904 12.9575 16.5423 13.581 15.5666C14.2046 14.5908 14.5551 13.2675 14.5551 11.8877H11.2297H7.9043Z"
@@ -91,14 +91,14 @@ export default async function PublicChatRoute({
                     fill="#D9D9D9"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M5.11694 11.8281C5.0173 12.2776 4.97778 12.7368 5.02697 13.1972C5.47755 17.4155 8.07146 20.6502 11.2039 20.6502C14.3128 20.6502 16.8912 17.464 17.3704 13.2923C17.4269 12.7993 17.3812 12.3081 17.2681 11.8281H5.11694Z"
                     fill="#23C4F7"
                   />
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M17.2945 11.9473C17.1982 11.4909 17.0388 11.044 16.8462 10.6145C16.5154 9.87654 16.2211 9.15712 15.9419 8.47428C14.6999 5.43802 13.7539 3.12524 11.2037 3.12524C8.5469 3.12524 7.5956 5.49414 6.28351 8.76149C6.03713 9.37503 5.77803 10.0202 5.49252 10.6874C5.31843 11.0942 5.17657 11.5167 5.0918 11.9473H17.2945Z"
                     fill="#FFCA11"
                   />
@@ -130,9 +130,9 @@ export default async function PublicChatRoute({
           {conversation.name}
         </p>
       </div>
-      <div className="h-full w-full overflow-auto px-3 py-8">
+      <div className="flex h-full w-full flex-col overflow-auto px-3">
         <div
-          className="mx-auto h-full w-full max-w-[840px] space-y-4"
+          className="mx-auto table h-full w-full max-w-[840px] space-y-4 py-8"
           data-conversation-container
         >
           <ConversationMessages
