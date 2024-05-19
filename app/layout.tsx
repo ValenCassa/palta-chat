@@ -5,6 +5,7 @@ import { cn } from "@/utils/cn";
 import { DialogManager } from "@/components/dialog-manager";
 import { Toaster } from "sonner";
 import { ClerkProvider } from "@clerk/nextjs";
+import favicon from "./favicon.png";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   title: "Palta",
   description: "Your hub for LLMs",
   icons: {
-    icon: "./favicon.png",
+    icon: favicon.src,
   },
 };
 
