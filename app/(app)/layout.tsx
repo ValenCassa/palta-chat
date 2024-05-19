@@ -1,13 +1,14 @@
 import { cookies } from "next/headers";
 import { Sidebar } from "./__shared/sidebar/sidebar";
 import { HistoryProvider } from "@/components/history-provider";
+import { getSidebarState } from "@/utils/get-sidebar-state";
 
 interface AppLayoutProps {
   children: React.ReactNode;
 }
 
 export default async function AppLayout({ children }: AppLayoutProps) {
-  const isSidebarOpen = cookies().get("sidebar-state")?.value === "open";
+  const isSidebarOpen = getSidebarState() === "open";
 
   return (
     <HistoryProvider>

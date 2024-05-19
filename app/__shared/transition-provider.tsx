@@ -1,8 +1,9 @@
 import { cn } from "@/utils/cn";
+import { getSidebarState } from "@/utils/get-sidebar-state";
 import { cookies } from "next/headers";
 
 export const Main = (props: { children: React.ReactNode }) => {
-  const isSidebarClosed = cookies().get("sidebar-state")?.value === "closed";
+  const isSidebarClosed = getSidebarState() === "closed";
   return (
     <main
       data-sidebar-closed={isSidebarClosed || undefined}
