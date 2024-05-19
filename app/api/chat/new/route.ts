@@ -88,7 +88,6 @@ export async function POST(req: Request) {
         .returning();
 
       const resultUsage = await result.usage;
-      console.log(resultUsage);
 
       const _usage: InsertUsage = {
         input: resultUsage.promptTokens + nameUsage.promptTokens,
