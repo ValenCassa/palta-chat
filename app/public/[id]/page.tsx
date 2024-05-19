@@ -1,7 +1,7 @@
 import { db } from "@/server/db/client";
 import { conversations } from "@/server/db/schema/conversations";
 import { users } from "@/server/db/schema/users";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { notFound } from "next/navigation";
 import { ConversationMessages } from "./__shared/conversation-messages";
 
@@ -17,7 +17,7 @@ export default async function PublicChatRoute({
   const data = await db
     .select()
     .from(conversations)
-    .where(eq(conversations.id, params.id))
+    .where(and(eq(conversations.id, params.id), eq(conversations.public, true)))
     .innerJoin(users, eq(conversations.userId, users.id));
   const chat = data[0];
 
