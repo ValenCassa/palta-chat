@@ -8,3 +8,5 @@ export const users = sqliteTable("users", {
   createdAt: text("created_at").$defaultFn(() => sql`(CURRENT_TIMESTAMP)`),
   profileThumbnail: text("profile_thumbnail"),
 });
+
+export type User = typeof users.$inferSelect;

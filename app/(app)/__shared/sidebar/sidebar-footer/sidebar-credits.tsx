@@ -63,7 +63,15 @@ export const SidebarCredits = async () => {
       <button
         className={cn(
           sidebarFooterActionClassNames,
-          "text-accent-primary hover:text-accent-primary",
+          { "text-accent-primary hover:text-accent-primary": !_alertType },
+          {
+            "text-warning-primary hover:text-warning-primary":
+              _alertType?.variant === "warning",
+          },
+          {
+            "text-danger-primary hover:text-danger-primary":
+              _alertType?.variant === "danger",
+          },
         )}
       >
         <CircleStackIcon />

@@ -5,6 +5,7 @@ import { forwardRef, useEffect, useRef } from "react";
 import { IconButton } from "../icon-button";
 import { PaperClipIcon } from "@heroicons/react/20/solid";
 import { Button } from "..";
+import { useDBUser } from "@/hooks/use-db-user";
 
 interface ChatInputProps
   extends Omit<
@@ -25,6 +26,7 @@ interface ChatInputProps
 export const ChatInput = forwardRef<HTMLTextAreaElement, ChatInputProps>(
   (props, ref) => {
     ref = useRef<HTMLTextAreaElement>(null);
+    const { data } = useDBUser();
     const {
       value: valueProp,
       onChange,
@@ -48,7 +50,7 @@ export const ChatInput = forwardRef<HTMLTextAreaElement, ChatInputProps>(
       onChange,
     });
 
-    const isDisabled = !value || isSending;
+    const isDisabled = !value || isSending || !data?.credits;
 
     useEffect(() => {
       const handleSave = (e: KeyboardEvent) => {
