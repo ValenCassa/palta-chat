@@ -5,13 +5,12 @@ import { conversations } from "@/server/db/schema/conversations";
 import { Usage, usage } from "@/server/db/schema/usage";
 import { currentUser } from "@clerk/nextjs/server";
 import { and, eq } from "drizzle-orm";
-import { unstable_cache } from "next/cache";
 import { notFound } from "next/navigation";
 
 interface GetChat {
   chatId: number;
 }
-export const getChat = unstable_cache(async ({ chatId }: GetChat) => {
+export const getChat = async ({ chatId }: GetChat) => {
   const user = await currentUser();
 
   if (!user) {
@@ -44,4 +43,4 @@ export const getChat = unstable_cache(async ({ chatId }: GetChat) => {
   const chat = { ...chats[0].conversations, usage: _usage };
 
   return chat;
-});
+};

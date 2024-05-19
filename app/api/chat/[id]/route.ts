@@ -55,7 +55,6 @@ export async function POST(
   try {
     const result = await streamText({
       model: getModelFunction(conversationModel),
-      maxTokens: 512,
       messages: [
         {
           role: "system",
