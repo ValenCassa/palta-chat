@@ -37,7 +37,7 @@ export const SidebarCredits = async () => {
     if (credits < 0.5) {
       return {
         variant: "danger",
-        label: "You ran out of credits",
+        label: "You've run out of credits",
       };
     }
 
