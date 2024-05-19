@@ -5,6 +5,7 @@ import { Config, defineConfig } from "drizzle-kit";
 
 export default defineConfig({
   schema: "./server/db/schema/*",
+  schemaFilter: ["**/*.ts"],
   dialect: "sqlite",
   out: "./server/db/migrations",
   driver: "turso",

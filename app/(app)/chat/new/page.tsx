@@ -15,6 +15,7 @@ import { useSWRConfig } from "swr";
 import { Conversation, Message } from "@/server/db/schema/conversations";
 import { ChatConversationContainer } from "../__shared/chat-conversation-container";
 import { toast } from "sonner";
+import { getChat } from "../__shared/actions/get-chat";
 
 export default function NewPage() {
   const { mutate } = useSWRConfig();
@@ -55,6 +56,10 @@ export default function NewPage() {
             },
             ...prev,
           ];
+        });
+
+        await getChat({
+          chatId: typedData[0].conversation.id,
         });
 
         toast.dismiss(toastRef!);

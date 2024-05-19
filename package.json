@@ -10,6 +10,7 @@
     "start:db": "cd server/supabase && source .env && supabase start",
     "db-prod:push": "source .env.prod && drizzle-kit push",
     "db:push": "drizzle-kit push",
+    "studio": "drizzle-kit studio",
     "db:stop": "cd server/supabase && source .env && supabase stop",
     "db:reset": "npm run db:dump && npm run db:push && npm run db:seed",
     "db:seed": "psql postgresql://postgres:postgres@localhost:54322/postgres -f ./server/db/seed.sql",

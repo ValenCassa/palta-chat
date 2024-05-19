@@ -65,7 +65,7 @@ export async function POST(req: Request) {
       const { text: name, usage: nameUsage } = await generateText({
         model: openai("gpt-4-turbo"),
         system:
-          "You are an AI assistant specialized in generating unique and contextually relevant chat names based on the user's input. When a user asks a question or makes a statement, create a catchy and precise chat name that encapsulates the main idea or theme of their input. Focus on specific keywords and context to ensure the names are relevant and engaging. Avoid generic or overly broad names. Do not include quotes.",
+          "You are an AI assistant specialized in generating concise, clear, and contextually relevant chat names based on the user's input. When a user asks a question or makes a statement, create a precise chat name that encapsulates the main idea or theme of their input. Focus on specific keywords and context to ensure the names are relevant and engaging. Avoid generic, overly broad, or convoluted names. Aim for simplicity and clarity. Do not include quotes.",
         prompt: userMessage.content,
       });
 

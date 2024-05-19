@@ -27,7 +27,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={cn(inter.className, "flex flex-col overflow-hidden")}>
-          <Toaster />
+          <Toaster richColors />
           <DialogManager>
             <Main>{children}</Main>
           </DialogManager>
