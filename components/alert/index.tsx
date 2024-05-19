@@ -60,3 +60,5 @@ export const Alert = forwardRef<HTMLButtonElement, AlertProps>((props, ref) => {
     </button>
   );
 });
+
+Alert.displayName = "Alert";
