@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="162" viewBox="0 0 176 162" width="176">
+<rect fill="#FFCD00" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="15" y="1"/>
+<rect fill="#FFCD00" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="143" y="1"/>
+<rect fill="#FFA400" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="15" y="33"/>
+<rect fill="#FFA400" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="47" y="33"/>
+<rect fill="#FFA400" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="111" y="33"/>
+<rect fill="#FFA400" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="143" y="33"/>
+<rect fill="#FF7100" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="15" y="65"/>
+<rect fill="#FF7100" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="47" y="65"/>
+<rect fill="#FF7100" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="79" y="65"/>
+<rect fill="#FF7100" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="111" y="65"/>
+<rect fill="#FF7100" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="143" y="65"/>
+<rect fill="#FF4902" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="15" y="97"/>
+<rect fill="#FF4902" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="79" y="97"/>
+<rect fill="#FF4902" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="143" y="97"/>
+<rect fill="#FF0006" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="15" y="129"/>
+<rect fill="#FF0006" height="32" stroke="#636363" stroke-opacity="0.2" stroke-width="0.5" width="32" x="143" y="129"/>
+<rect fill="black" height="160" width="16" y="1"/>
+<rect fill="black" height="32" width="16" x="63" y="97"/>
+<rect fill="black" height="32" width="16" x="95" y="33"/>
+<rect fill="black" height="32" width="16" x="127" y="1"/>
+<rect fill="black" height="64" width="16" x="127" y="97"/>
+</svg>
