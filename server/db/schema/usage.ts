@@ -14,7 +14,7 @@ export const usage = sqliteTable(
   {
     id: integer("id").primaryKey({ autoIncrement: true }),
     userId: text("user_id")
-      .references(() => users.id)
+      .references(() => users.id, { onDelete: "cascade" })
       .notNull(),
     chatId: integer("chat_id").references(() => conversations.id, {
       onDelete: "set null",

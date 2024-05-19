@@ -55,6 +55,7 @@ export async function POST(req: Request) {
     await db.insert(users).values({
       id: evt.data.id,
       email: evt.data.email_addresses[0].email_address,
+      profileThumbnail: evt.data.image_url,
     });
   } catch (e) {
     clerkClient.users.deleteUser(evt.data.id);

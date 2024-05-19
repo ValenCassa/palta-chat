@@ -6,4 +6,5 @@ export const users = sqliteTable("users", {
   credits: integer("credits").default(0).notNull(),
   email: text("email").notNull(),
   created_at: text("created_at").$defaultFn(() => sql`(CURRENT_TIMESTAMP)`),
+  profileThumbnail: text("profile_thumbnail").notNull(),
 });
