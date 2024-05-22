@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO -->
 
-## Getting Started
+[![Palta](https://i.imgur.com/Pd1AHlC.png)](https://app.palta.chat)
 
-First, run the development server:
+## About the project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<img width="100%" alt="Project's thumbnail" src="https://i.imgur.com/olBE9wf.png">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Your hub for LLMs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Hey there! Are you curious about the latest advancements in AI? Want to chat with the most cutting-edge language models out there? Look no further than Palta!
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Our platform is a hub for all the latest Large Language Models (LLMs), where you can discover and chat with the latest models. From GPT-3.5 to Llama 3 and beyond, we've got them all in one place.
 
-## Learn More
+### Built with
 
-To learn more about Next.js, take a look at the following resources:
+- [NextJS](https://nextjs.org/?ref=app.palta.chat)
+- [Turso](https://turso.tech/?ref=app.palta.chat)
+- [Clerk](https://clerk.com/?ref=app.palta.chat)
+- [Tailwind CSS](https://tailwindcss.com/?ref=app.palta.chat)
+- [Drizzle](https://orm.drizzle.team/?ref=app.palta.chat)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact me
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Meet me for any commercial inquiries or to discuss your project.
 
-## Deploy on Vercel
+<a href="https://cal.com/valen-cassa/let-s-chat-about-your-idea"><img src="https://cal.com/book-with-cal-dark.svg" alt="Book us with Cal.com"></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Here is what you need in order to run Palta.
+
+- Node.js (Version: >=18.x)
+- A Turso project setup
+- A Clerk project setup
+- A [OpenAI](https://openai.com/) API key
+- A [Fireworks](https://fireworks.ai/) API key
+- A [Groq](https://console.groq.com/) API key
+
+## Development
+
+### Setup
+
+1. Clone the repo into a public GitHub repository (or fork https://github.com/ValenCassa/palta-chat/fork). If you plan to distribute the code, keep the source code public to comply with [AGPLv3](https://github.com/ValenCassa/palta-chat/blob/main/LICENSE).
+
+   ```sh
+   git clone https://github.com/ValenCassa/palta-chat.git
+   ```
+
+2. Go to the project folder
+
+   ```sh
+   cd palta-chat
+   ```
+
+3. Install packages with npm
+
+   ```sh
+   npm install
+   ```
+
+4. Set up your `.env` file
+
+   - Duplicate `.env.example` to `.env`
+   - Fill in the required environment variables
+
+5. Setup Node
+   If your Node version does not meet the project's requirements as instructed by the docs, "nvm" (Node Version Manager) allows using Node at the version required by the project:
+
+   ```sh
+   nvm use
+   ```
+
+   You first might need to install the specific version and then use it:
+
+   ```sh
+   nvm install && nvm use
+   ```
+
+   You can install nvm from [here](https://github.com/nvm-sh/nvm).
+
+6. Push schema to the database
+
+   ```sh
+   npm run db:push
+   ```
+
+7. Run the project in development mode
+
+   ```sh
+   npm run dev
+   ```
