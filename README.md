@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO -->
 
-[![Palta](https://i.imgur.com/Pd1AHlC.png)](https://app.palta.chat)
-
 > [!CAUTION]
 > The project is in development. When self-hosting it, you'll need to manually add credits to your user in the database. This will be automated in the future.
+
+[![Palta](https://i.imgur.com/Pd1AHlC.png)](https://app.palta.chat)
 
 ## About the project
 
